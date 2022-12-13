@@ -53,8 +53,18 @@ const questions = [
     },
     {
         type: "input",
+        name: 'contributions',
+        message:'Who contributed, What is your name?'
+    },
+    {
+        type: "input",
+        name: 'contributions0',
+        message:'What is your github username?'
+    },
+    {
+        type: "input",
         name: 'contributions1',
-        message:'Who contributed to this project? Include GitHub links'
+        message:'Who else contributed to this project? Include GitHub links'
     },
     {
         type: "input",
@@ -80,6 +90,11 @@ const questions = [
         type: "input",
         name: 'questions',
         message:'What are some questions others may have about this project?'
+    },
+    {
+        type: "input",
+        name: 'questions2',
+        message:'What email address can you be reached at for further questions?'
     },
     {
         type: "input",
@@ -133,6 +148,8 @@ ${response.description1}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Features](#Features)
+- [Questions](#Questions)
     
 ## Installation
     
@@ -147,6 +164,9 @@ ${response.usage}
     
     
 ## Credits
+
+${response.contributions}
+https://github.com/${response.contributions0}
     
 ${response.contributions1}
     
@@ -170,6 +190,14 @@ ${response.contributions2}
     
 The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
     
+## Questions
+
+${response.questions}
+
+Further Questions email at:
+
+${response.questions2}
+
 ## Tests
     
 ${response.test}.`;
