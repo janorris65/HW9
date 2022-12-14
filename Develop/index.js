@@ -148,8 +148,8 @@ ${response.description1}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Features](#Features)
-- [Questions](#Questions)
+- [Features](#features)
+- [Questions](#questions)
     
 ## Installation
     
